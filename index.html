@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pastelería Jota | Artesanal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --rosa:#f3b6c8;
+  --rosa-soft:#fdecef;
+  --celeste:#cfe9f5;
+  --texto:#444;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(180deg,var(--rosa-soft),#fff);
+  color:var(--texto);
+}
+
+header{
+  text-align:center;
+  padding:70px 20px 50px;
+}
+
+header img{
+  width:130px;
+  margin-bottom:20px;
+}
+
+header h1{
+  font-family:'Playfair Display',serif;
+  font-size:2.5rem;
+  color:#d46c8a;
+}
+
+header p{
+  margin-top:12px;
+  font-size:1.05rem;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:28px;
+  padding:15px 34px;
+  border-radius:40px;
+  background:linear-gradient(90deg,var(--rosa),var(--celeste));
+  color:#fff;
+  text-decoration:none;
+  font-weight:500;
+  transition:.3s;
+}
+
+.btn:hover{transform:scale(1.06);}
+
+section{
+  max-width:1200px;
+  margin:auto;
+  padding:70px 20px;
+}
+
+.titulo{
+  text-align:center;
+  margin-bottom:45px;
+}
+
+.titulo h2{
+  font-family:'Playfair Display',serif;
+  font-size:2rem;
+  color:#d46c8a;
+}
+
+.titulo p{
+  margin-top:10px;
+  font-size:.95rem;
+}
+
+.catalogo{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.producto{
+  background:#fff;
+  border-radius:25px;
+  overflow:hidden;
+  box-shadow:0 15px 30px rgba(0,0,0,.07);
+  transition:.3s;
+}
+
+.producto:hover{
+  transform:translateY(-6px);
+}
+
+.producto img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.producto .info{
+  padding:22px;
+}
+
+.producto h3{
+  color:#d46c8a;
+  margin-bottom:8px;
+}
+
+.producto p{
+  font-size:.9rem;
+}
+
+.beneficios{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.beneficio{
+  background:#fff;
+  padding:30px;
+  border-radius:25px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.beneficio h4{
+  margin-bottom:10px;
+  color:#d46c8a;
+}
+
+.ubicacion{
+  background:var(--celeste);
+  border-radius:35px;
+  text-align:center;
+  padding:55px 25px;
+}
+
+footer{
+  text-align:center;
+  padding:35px;
+  font-size:.9rem;
+  color:#888;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="https://iili.io/fsz63CP.md.jpg" alt="Pastelería Jota">
+  <h1>Pastelería Jota</h1>
+  <p>Pastelería artesanal · pedidos con anticipación · San Miguel</p>
+
+  <a class="btn" href="https://wa.me/message/DTUZT4MKBNJJH1" target="_blank">
+    Pedir por WhatsApp 💬
+  </a>
+</header>
+
+<section>
+  <div class="titulo">
+    <h2>Nuestros productos</h2>
+    <p>Hechos a mano, frescos y con ingredientes de calidad</p>
+  </div>
+
+  <div class="catalogo">
+    <div class="producto">
+      <img src="https://iili.io/fsrSpiN.md.jpg">
+      <div class="info">
+        <h3>Medialunas</h3>
+        <p>Doradas, hojaldradas y súper suaves.</p>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://iili.io/fsrU9fI.md.jpg">
+      <div class="info">
+        <h3>Panificados</h3>
+        <p>Ideales para desayunos y meriendas.</p>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://iili.io/fsrSmVp.md.jpg">
+      <div class="info">
+        <h3>Preparación artesanal</h3>
+        <p>Proceso manual con dedicación y amor.</p>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://iili.io/fsrSbxR.md.jpg">
+      <div class="info">
+        <h3>Tortas</h3>
+        <p>Clásicas y especiales para cada ocasión.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="titulo">
+    <h2>¿Por qué elegirnos?</h2>
+  </div>
+
+  <div class="beneficios">
+    <div class="beneficio">
+      <h4>🧁 Artesanal</h4>
+      <p>Todo hecho en el día, sin procesos industriales.</p>
+    </div>
+
+    <div class="beneficio">
+      <h4>📦 Take away & envíos</h4>
+      <p>Retirá o coordiná envío fácilmente.</p>
+    </div>
+
+    <div class="beneficio">
+      <h4>📅 Pedidos anticipados</h4>
+      <p>Perfecto para fechas especiales.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ubicacion">
+  <h2>📍 San Miguel, Buenos Aires</h2>
+  <p>Pedidos por WhatsApp con anticipación</p>
+
+  <a class="btn" href="https://instagram.com/pasteleriajota" target="_blank">
+    Ver Instagram 💕
+  </a>
+</section>
+
+<footer>
+  © 2025 Pastelería Jota · Hecho con amor 💗
+</footer>
+
+</body>
+</html>
